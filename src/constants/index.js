@@ -122,7 +122,7 @@ const experiences = [
     company_name: "Trustify",
     icon: trustify,
     iconBg: "#383E56",
-    date: "January 2023 - April 2024",
+    // date: "January 2023 - April 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,8 +142,7 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    testimonial: "Adrian is a web developer who truly cares about clients.",
     name: "Pedro Linares Molina",
     designation: "Head of Frontend Dev",
     company: "Trustify",

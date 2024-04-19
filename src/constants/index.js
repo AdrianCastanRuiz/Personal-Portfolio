@@ -15,17 +15,11 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  jobit,
-  tripguide,
   threejs,
   meower,
   gloton,
+  trustify,
 } from "../assets";
-import trustify from "../assets/company/trustify.png";
 
 export const navLinks = [
   {
@@ -122,7 +116,6 @@ const experiences = [
     company_name: "Trustify",
     icon: trustify,
     iconBg: "#383E56",
-    // date: "January 2023 - April 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -151,6 +144,24 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Trustify",
+    description:
+      "Trustyfy is a software where your assets are in your digital digital wallet(s), and only you can use them. You can transfer any sum anywhere in the world within minutes (sometimes seconds). And usually for a fraction of the cost.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trustify,
+    source_code_link: "https://trustyfy.com/",
+  },
   {
     name: "Meower",
     description:

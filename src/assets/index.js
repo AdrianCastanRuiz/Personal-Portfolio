@@ -29,6 +29,8 @@ import tesla from "./company/tesla.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gloton from "./gloton.png";
+import trustify from "./trustify.png";
+import trustifyLogo from "./trustifylogo.png";
 
 export {
   logo,
@@ -60,4 +62,6 @@ export {
   tripguide,
   meower,
   gloton,
+  trustify,
+  trustifyLogo,
 };

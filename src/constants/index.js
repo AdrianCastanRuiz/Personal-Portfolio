@@ -147,7 +147,7 @@ const projects = [
   {
     name: "Trustify",
     description:
-      "Trustyfy is a software where your assets are in your digital digital wallet(s), and only you can use them. You can transfer any sum anywhere in the world within minutes (sometimes seconds). And usually for a fraction of the cost.",
+      "Trustyfy is a software where your assets are in your digital wallet(s), and only you can use them. You can transfer any sum anywhere in the world within minutes (sometimes seconds). And usually for a fraction of the cost.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       {

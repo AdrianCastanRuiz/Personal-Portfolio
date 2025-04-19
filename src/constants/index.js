@@ -19,7 +19,11 @@ import {
   meower,
   gloton,
   trustify,
-  winworldLogo
+  winworldLogo,
+  intratime,
+  logoIntratime,
+  github,
+  trustifyLogo
 } from "../assets";
 
 export const navLinks = [
@@ -174,6 +178,7 @@ const projects = [
     ],
     image: trustify,
     source_code_link: "https://trustyfy.com/",
+    logo: trustifyLogo
   },
   {
     name: "Meower",
@@ -195,6 +200,7 @@ const projects = [
     ],
     image: meower,
     source_code_link: "https://github.com/nds-fsd/twitter",
+    logo: github
   },
 
   {
@@ -217,7 +223,33 @@ const projects = [
     ],
     image: gloton,
     source_code_link: "https://github.com/nds-fsd/glovo",
+    logo: github
+
   },
+  {
+    name: "Intratime",
+ 
+    description:
+      "Intratime lets you know what's happening in your business, as employee timesheets let you know how many hours they're working and where they're located.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Laravel",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: intratime,
+    source_code_link: "https://www.intratime.es/",
+    logo: logoIntratime
+
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };

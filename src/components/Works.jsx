@@ -5,7 +5,6 @@ import { github } from "../assets";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { trustifyLogo } from "../assets";
 
 const ProjectCard = ({
   index,
@@ -16,6 +15,7 @@ const ProjectCard = ({
   source_code_link,
   logo
 }) => {
+  console.log(name);
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -33,7 +33,16 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-
+         {
+          name == "AgreenJardineria" && <a
+             href="https://agreen-jardineria.netlify.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="absolute z-50 bottom-3 left-3 bg-black text-white px-3 py-1 rounded-md text-sm hover:bg-gray-800 transition"
+          >
+              Open website
+          </a>
+        } 
           <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}

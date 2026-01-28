@@ -31,9 +31,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gloton from "./gloton.png";
 import trustify from "./trustify.png";
-import trustifyLogo from "./trustifylogo.png";
+import agreenlogo from "./agreenlogo.png";
 import intratime from "./intratime.png";
 import logoIntratime from "./logo-intratime.png";
+import agreen from "./agreen.png";
 
 export {
   logo,
@@ -66,8 +67,9 @@ export {
   meower,
   gloton,
   trustify,
-  trustifyLogo,
+  agreenlogo,
   winworldLogo,
   intratime,
-  logoIntratime
+  logoIntratime,
+  agreen
 };

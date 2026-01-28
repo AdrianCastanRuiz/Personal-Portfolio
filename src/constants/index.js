@@ -163,9 +163,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "AgreenJardineria",
+    name: "AcnJardineria",
     description:
-      "AgreenJardineria is a gardening services company. This is the website where you can see all the services it offers. It also includes a contact form. I was the designer and developer of this project.",
+      "AcnJardineria is a gardening services company. This is the website where you can see all the services it offers. It also includes a contact form. I was the designer and developer of this project.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       {

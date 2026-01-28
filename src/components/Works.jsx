@@ -34,7 +34,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
          {
-          name == "AgreenJardineria" && <a
+          name == "AcnJardineria" && <a
              href="https://acn-jardineria.netlify.app/"
              target="_blank"
              rel="noopener noreferrer"

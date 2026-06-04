@@ -43,6 +43,16 @@ const ProjectCard = ({
               Open website
           </a>
         } 
+          {
+          name == "AlbaDoulaNacer" && <a
+             href="https://albadoulanacer.netlify.app/"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="absolute z-50 bottom-3 left-3 bg-black text-white px-3 py-1 rounded-md text-sm hover:bg-gray-800 transition"
+          >
+              Open website
+          </a>
+        } 
           <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}

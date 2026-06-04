@@ -24,7 +24,8 @@ import {
   logoIntratime,
   github,
   agreen,
-  agreenlogo
+  agreenlogo,
+  albadoulanacer
 } from "../assets";
 
 export const navLinks = [
@@ -163,6 +164,26 @@ const testimonials = [
 
 const projects = [
   {
+    name: "AlbaDoulaNacer",
+    description: 
+      "AlbaDoulaNacer is a maternity services website offering support for pregnancy, birth, and postpartum stages. It includes a services catalog, a maternity & parenting guide, and a contact form with EmailJS integration. I was the designer and developer of this project.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typeccript",
+        color: "green-text-gradient",
+      },
+     
+    ],
+    image: albadoulanacer,
+    source_code_link: "https://github.com/AdrianCastanRuiz/albadoulanacer",
+    logo: github
+
+  },
+  {
     name: "AcnJardineria",
     description:
       "AcnJardineria is a gardening services company. This is the website where you can see all the services it offers. It also includes a contact form. I was the designer and developer of this project.",
@@ -172,10 +193,7 @@ const projects = [
         name: "typescript",
         color: "green-text-gradient",
       },
-      {
-        name: "NodeJS",
-        color: "pink-text-gradient",
-      },
+     
     ],
     image: agreen,
     source_code_link: "https://github.com/AdrianCastanRuiz/jardineria-web",
@@ -227,6 +245,7 @@ const projects = [
     logo: github
 
   },
+   
   // {
   //   name: "Intratime",
  

@@ -21,12 +21,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import winworldLogo from "./winworldlogo.png"
-
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import gloton from "./gloton.png";
@@ -35,6 +33,7 @@ import agreenlogo from "./agreenlogo.png";
 import intratime from "./intratime.png";
 import logoIntratime from "./logo-intratime.png";
 import agreen from "./agreen.png";
+import albadoulanacer from "./albadoulanacer.jpg"
 
 export {
   logo,
@@ -71,5 +70,6 @@ export {
   winworldLogo,
   intratime,
   logoIntratime,
-  agreen
+  agreen,
+  albadoulanacer
 };

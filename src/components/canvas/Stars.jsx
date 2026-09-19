@@ -1,12 +1,17 @@
-import React, {useState, useRef, Suspense} from 'react'
+import React, {useState, useRef, useEffect, Suspense} from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Points, PointMaterial, Preload, Sphere } from '@react-three/drei'
 import * as random from 'maath/random/dist/maath-random.esm'
 import { Group } from 'three'
+import CanvasGuard, { watchContextLoss } from './CanvasGuard'
 
-const Stars = (props) => {
+const Stars = ({ onReady, ...props }) => {
 
   const ref = useRef()
+
+  useEffect(() => {
+    onReady?.()
+  }, [onReady])
 
   const sphere = random.inSphere(new Float32Array(5000), {radius: 1.2} )
 
@@ -38,16 +43,24 @@ const StarsCanvas = () => {
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
 
-      <Canvas camera={{ position: [0, 0, 1]}}>
+      {/* Purely decorative: if WebGL fails, render nothing instead of crashing the page */}
+      <CanvasGuard fallback={null}>
+        {({ ready, fail }) => (
+          <Canvas
+            camera={{ position: [0, 0, 1]}}
+            onCreated={(state) => watchContextLoss(state, fail)}
+          >
 
-        <Suspense fallback={null}>
+            <Suspense fallback={null}>
 
-          <Stars />
+              <Stars onReady={ready} />
 
-        </Suspense>
-           
-           <Preload all />
-      </Canvas>
+            </Suspense>
+
+            <Preload all />
+          </Canvas>
+        )}
+      </CanvasGuard>
 
     </div>
   )

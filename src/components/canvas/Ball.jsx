@@ -5,6 +5,7 @@ import {
 } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 import CanvasGuard, { watchContextLoss } from './CanvasGuard'
+import BallFallback from './BallFallback'
 
 const Ball = (props) => {
 
@@ -41,13 +42,7 @@ const Ball = (props) => {
 
 const BallCanvas = ( {icon} ) => {
   return (
-    <CanvasGuard
-      fallback={
-        <div className='w-full h-full flex items-center justify-center rounded-full bg-[#fff8eb]'>
-          <img src={icon} alt='' className='w-1/2 h-1/2 object-contain' />
-        </div>
-      }
-    >
+    <CanvasGuard fallback={<BallFallback icon={icon} />}>
       {({ ready, fail }) => (
         <Canvas
         frameloop='demand'

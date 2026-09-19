@@ -232,7 +232,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "typeccript",
+        name: "typescript",
         color: "green-text-gradient",
       },
      

@@ -19,13 +19,15 @@ import {
   meower,
   gloton,
   trustify,
-  winworldLogo,
+  kennedLogo,
   intratime,
   logoIntratime,
   github,
   agreen,
   agreenlogo,
-  albadoulanacer
+  albadoulanacer,
+  trekform,
+  trekia
 } from "../assets";
 
 export const navLinks = [
@@ -57,8 +59,16 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "AI Developer",
+    icon: backend,
+  },
+  {
+    title: "Prompt Engineer",
     icon: creator,
+  },
+  {
+    title: "React Native Developer",
+    icon: mobile,
   },
 ];
 
@@ -119,22 +129,23 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Freelance Web Developer",
+    title: "Freelance Full Stack Developer",
     company_name: "",
     icon: trustify,
     iconBg: "#383E56",
     points: [
-      "Designed and developed responsive websites using React, HTML, CSS, and TypeScript.",
-      "Built custom websites for individual clients based on their needs and preferences",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Optimized websites for basic SEO and loading speed",
+      "Designed and developed mobile apps and websites for individual clients, based on their needs and preferences.",
+      "Developed APIs and backend services to power web and mobile applications.",
+      "Wrote automated tests to ensure the quality and reliability of the code.",
+      "Designed databases and implemented server-side business logic.",
+      "Implemented responsive design, cross-browser compatibility and basic SEO optimization.",
     ],
   },
   {
     title: "Full Stack Developer",
-    company_name: "WinWorld",
-    icon: winworldLogo,
-    iconBg: "#383E56",
+    company_name: "Kenned Group",
+    icon: kennedLogo,
+    iconBg: "#E67346",
     points: [
       "Developing and maintaining web applications using React.js, TypeScript, Next JS, Php, SQL and other related technologies.",
       "Integrated RESTful APIs and third-party services, ensuring seamless data flow and connectivity.",
@@ -164,6 +175,50 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Trekia",
+    description:
+      "Trekia is the corporate website of a B2B software, automation and applied AI consultancy. It presents its services (process automation, ERP/CRM integrations, custom software, dashboards & BI, AI for operations), sectors and working method, and includes a blog, a contact page, cookie consent, legal pages and a light/dark theme. I was the designer and developer of this project.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vercel",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trekia,
+    live_link: "https://trekia-brown.vercel.app/",
+  },
+  {
+    name: "Trekform",
+    description:
+      "Trekform is a vocational training platform for forklift operator certification, heavy machinery and occupational risk prevention (PRL) courses. It includes a course catalog with real upcoming sessions, online enrollment, a blog, a contact form, and an admin panel to manage courses, sessions, enrollments and users, all backed by Supabase. I was the designer and developer of this project.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trekform,
+    source_code_link: "https://github.com/acastantrek/trekform",
+    live_link: "https://trekform.vercel.app",
+    logo: github
+  },
+  {
     name: "AlbaDoulaNacer",
     description: 
       "AlbaDoulaNacer is a maternity services website offering support for pregnancy, birth, and postpartum stages. It includes a services catalog, a maternity & parenting guide, and a contact form with EmailJS integration. I was the designer and developer of this project.",
@@ -180,6 +235,7 @@ const projects = [
     ],
     image: albadoulanacer,
     source_code_link: "https://github.com/AdrianCastanRuiz/albadoulanacer",
+    live_link: "https://albadoulanacer.netlify.app/",
     logo: github
 
   },
@@ -197,6 +253,7 @@ const projects = [
     ],
     image: agreen,
     source_code_link: "https://github.com/AdrianCastanRuiz/jardineria-web",
+    live_link: "https://acn-jardineria.netlify.app/",
     logo: github
   },
   {

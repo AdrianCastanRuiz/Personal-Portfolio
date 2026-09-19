@@ -13,19 +13,19 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
   logo
 }) => {
   console.log(name);
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="h-full">
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl
-      sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -33,41 +33,33 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-         {
-          name == "AcnJardineria" && <a
-             href="https://acn-jardineria.netlify.app/"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="absolute z-50 bottom-3 left-3 bg-black text-white px-3 py-1 rounded-md text-sm hover:bg-gray-800 transition"
-          >
-              Open website
-          </a>
-        } 
-          {
-          name == "AlbaDoulaNacer" && <a
-             href="https://albadoulanacer.netlify.app/"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="absolute z-50 bottom-3 left-3 bg-black text-white px-3 py-1 rounded-md text-sm hover:bg-gray-800 transition"
-          >
-              Open website
-          </a>
-        } 
-          <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+          {live_link && (
+            <a
+              href={live_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute z-50 bottom-3 left-3 bg-black text-white px-3 py-1 rounded-md text-sm hover:bg-gray-800 transition"
             >
-              <img
-                src={logo}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+              Open website
+            </a>
+          )}
+          {source_code_link && (
+            <div className="absolute inset-0 flex justify-end m-3 card-img-hover">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={logo}
+                  alt="github"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
-        <div className="mt-5 ">
+        <div className="mt-5 flex-1">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
@@ -103,7 +95,7 @@ const Works = () => {
           and manage projects effectively.
         </motion.p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-[repeat(auto-fill,360px)] auto-rows-fr gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

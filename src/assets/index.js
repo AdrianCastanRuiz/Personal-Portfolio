@@ -20,7 +20,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import winworldLogo from "./winworldlogo.png"
+import kennedLogo from "./kennedlogo.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -34,6 +34,8 @@ import intratime from "./intratime.png";
 import logoIntratime from "./logo-intratime.png";
 import agreen from "./agreen.png";
 import albadoulanacer from "./albadoulanacer.jpg"
+import trekform from "./trekform.jpg"
+import trekia from "./trekia.jpg"
 
 export {
   logo,
@@ -67,9 +69,11 @@ export {
   gloton,
   trustify,
   agreenlogo,
-  winworldLogo,
+  kennedLogo,
   intratime,
   logoIntratime,
   agreen,
-  albadoulanacer
+  albadoulanacer,
+  trekform,
+  trekia
 };

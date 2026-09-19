@@ -38,7 +38,7 @@ const ProjectCard = ({
               href={live_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute z-50 bottom-3 left-3 flex items-center gap-1.5 bg-[#915eff] text-white font-bold px-4 py-2 rounded-lg text-[14px] shadow-lg shadow-black/50 ring-2 ring-white/20 hover:bg-[#7c47ee] hover:scale-105 transition"
+              className="absolute z-50 bottom-8 left-3 flex items-center gap-1.5 bg-[#915eff] text-white font-bold px-4 py-2 rounded-lg text-[14px] shadow-lg shadow-black/50 ring-2 ring-white/20 hover:bg-[#7c47ee] hover:scale-105 transition"
             >
               Open website
               <span aria-hidden="true">↗</span>
